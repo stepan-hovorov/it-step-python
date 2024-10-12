@@ -1,4 +1,4 @@
-
+many = 10000
 my_bascket = {}
 ware_1 = input()
 my_bascket[ware_1.split(' ')[0]] = int((ware_1.split(' '))[1])
@@ -18,3 +18,8 @@ print('ware -', my_bascket.popitem())
 print('ware -', my_bascket.popitem())
 print('ware -', my_bascket.popitem())
 print("Total cost-", total_cost)
+
+if many >= total_cost:
+    print(total_cost-many)
+elif many <= total_cost:
+    print('грошей не вистачає')
